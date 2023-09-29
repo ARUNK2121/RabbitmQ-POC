@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println("RabbitMQ in Golang: Getting started tutorial")
 
 	connection, err := amqp.Dial("amqp://user:password@localhost:5672/")
 	if err != nil {
