@@ -38,7 +38,7 @@ func main() {
 	}
 
 	// print consumed messages from queue
-	forever := make(chan bool)
+	forever := make(chan struct{})
 	go func() {
 		for msg := range msgs {
 			fmt.Printf("Received Message: %s\n", msg.Body)
